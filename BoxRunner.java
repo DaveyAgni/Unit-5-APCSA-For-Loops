@@ -6,6 +6,7 @@ public class BoxRunner
 {
 	public static void main ( String[] args )
 	{
-		//add test cases		
+		String word = "hippo";
+        	Box.print(word);
 	}
 }
