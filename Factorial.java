@@ -6,7 +6,18 @@ public class Factorial
 {
 	public static long getFactorial( int num )
 	{
-		long factorial=1;
-		return factorial;
+        long total = 1;
+        int i = 1;
+
+        for(;i <= num;)
+        {
+            total *= i;
+            i++;
+        }
+		long factorial= total;
+        System.out.println(factorial);
+        return factorial;
+		
+        
 	}
 }
