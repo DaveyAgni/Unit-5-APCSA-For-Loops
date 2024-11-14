@@ -6,7 +6,7 @@ public class MultTableRunner
 {
 	public static void main ( String[] args )
 	{
-		//add test cases
-		
+        MultTable x = new MultTable(4, 10);
+        x.printTable();
 	}
 }
