@@ -4,22 +4,39 @@
 
 public class CoolNumbers 
 {
-	/*
-	 *method isCoolNumber will return true if
-	 *	num % 3-6 all have a remainder of 1
-	 *it will return false otherwize
-	 */
+
 	public static boolean isCoolNumber( int num )
 	{
-		 return false;
+        if(num%3 == 1 && num%4 == 1 && num%5 == 1 && num%6 == 1)
+        {
+			return true;
+        }
+		else{
+			return false;
+		}
+
+
 	}
 	
-		/*
-	 *method countCoolNumbers will return the count
-	 *of the coolNumbers between 6 and stop
-	 */
+	
 	public static int countCoolNumbers( int stop )
+
 	{
-		return 0;
+		int count = 0;
+
+		for(int i = 6; i <= stop ; i++)
+        {
+			boolean j = CoolNumbers.isCoolNumber(i);
+
+			if(j == true)
+			{
+				count++;
+			}
+			else{
+				count += 0;
+			}
+        }
+		return count;
+		
 	}
 }
